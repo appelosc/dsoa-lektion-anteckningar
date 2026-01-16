@@ -1,5 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Lektion2.");
+        System.out.println("Hello");
+
+        Car car = new Car("Porsche");
+        Bike bike = new Bike("Scott");
+
+        System.out.println(car.getName() + " is " + car.getVehicleType() );
+        System.out.println(bike.getName() + " is " + bike.getVehicleType());
     }
-}
+    }
+
