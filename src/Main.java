@@ -8,10 +8,10 @@ public class Main {
         String str = input.nextLine();
         System.out.printf("DU skrev %s\n",str);
          **/
+        int myInt = Utils.getIntInput("Ge ett heltal: ");
+        System.out.println(myInt);
 
-
-
-
+        System.exit(0);
 
 
         BikeShop bikeshop = new BikeShop();
