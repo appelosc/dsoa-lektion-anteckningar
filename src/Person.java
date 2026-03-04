@@ -1,4 +1,4 @@
-public class Person {
+public class Person implements Comparable<Person> {
     String name;
 
 
@@ -16,5 +16,13 @@ public class Person {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return getName();
+    }
 
+    @Override
+    public int compareTo(Person o) {
+        return name.compareTo(o.getName());
+    }
 }
